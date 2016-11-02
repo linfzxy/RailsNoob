@@ -7,5 +7,21 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+<!-- 查看评论 -->
+
+<!--<% @article.comments.each do |e| %>-->
+   <!---->
+    <!--<p>-->
+      <!--<%= link_to 'Delete', article_comment_path(e),method: :delete , data: { confirm: 'sure?'} %>-->
+    <!--</p>-->
+<!--<% end %>-->
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+
+<!-- 添加评论 -->
+
+<%= render 'comments/form' %>
+
 <%= link_to 'Back', articles_path %>
 <%= link_to 'Edit', edit_article_path(@article) %>
