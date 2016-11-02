@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  http_basic_authenticate_with name:'lynn',password:'lynn',except:[:index,:show]
   def new
     puts 444444444444444
     @article=Article.new
