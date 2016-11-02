@@ -32,5 +32,5 @@ Windows10 Enterprise Edition
 
 * Deployment instructions
 
-* ...
+* ..
 
